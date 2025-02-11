@@ -2,9 +2,9 @@
 
 {% block content %}
 <main class="container region flow">
-  <h1>{{ title }}</h1>
+  <h1 style="background-color:white;">{{ title }}</h1>
   <form action="/new" method="post">
-    <label for="message">Message</label>
+    <label for="message" style="background-color: white;">Message</label>
     <textarea id="message" name="message" required></textarea>
     <button type="submit">Post new</button>
   </form>
