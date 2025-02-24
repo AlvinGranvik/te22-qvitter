@@ -11,8 +11,8 @@ router.get("/", async (req, res) => {
     ORDER BY updated_at DESC;`)
 
   res.render("index.njk", {
-    title: "Post - All posts",
-    message: "Message from routes/index.js",
+    title: "Posts n allat",
+    message: "Yessir",
     tweets: tweets,
   })
 })
