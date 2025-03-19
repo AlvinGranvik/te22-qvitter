@@ -2,9 +2,11 @@
 
 {% block content %}
 <main class="container region flow">
+  <div class="bordertext">
   <h1>{{ title }}</h1>
   <p>{{ message }}</p>
   <a href="./new">Post da post</a>
+</div>
   <ul class="tweets flow">
     {% for tweet in tweets %}
     <li class="tweet">
@@ -19,14 +21,8 @@
             <li>Shared</li>
             <li>Reply</li>
             <li>Favourite</li>
-            <!-- <li><a href="/tweets/{{ tweet.id }}/delete">Soptunneikon</a></li> -->
-            <!-- <li><form action="/tweets/{{ tweet.id }}/delete" method="get">
-              <button type="submit">Soptunneikon</button>
-            </form></li> -->¨
-            <li><form action="/tweets/delete" method="post">
-              <input type="hidden" name="id" value="{{ tweet.id }}">
-              <button type="submit">Soptunneikon</button>
-            </form></li>
+            <li><button><a href="/tweets/{{ tweet.id }}/delete">Skärpa</a></button></li>
+            <li><button><a href="/tweets/{{ tweet.id }}/edit">Redigera</a></button></li>
           </ul>
         </footer>
       </article>

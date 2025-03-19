@@ -4,7 +4,9 @@
 <main class="container region flow">
   <h1 style="background-color:white;">{{ title }}</h1>
   <form action="/new" method="post">
-    <label for="message" style="background-color: white;">Message</label>
+  <div class="bordertext">
+    <label for="message">Message</label>
+  </div>
     <textarea id="message" name="message" required></textarea>
     <button type="submit">Post new</button>
   </form>

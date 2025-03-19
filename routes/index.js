@@ -19,7 +19,19 @@ router.get("/", async (req, res) => {
 
 router.get("/new", (req, res) => {
   res.render("new.njk", {
-    title: "How for to post guys pls help - Post the post",
+    title: "Post da post"
+  })
+})
+
+router.get("/about", (req, res) => {
+  res.render("about.njk", {
+    title: "welcome to Post da post where you, in fact, post da post",
+  })
+})
+
+router.get("/contact", (req, res) => {
+  res.render("contact.njk", {
+    title: "CONTACT ME IF YOU HAVE ISSUES!!!",
   })
 })
 
